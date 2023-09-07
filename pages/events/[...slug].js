@@ -4,8 +4,8 @@ import { useRouter } from 'next/router';
 import { getFilteredEvents } from '../../dummy-data';
 import EventList from '../../components/events/event-list';
 import ResultsTitle from '../../components/events/results-title';
-import Button from '../../components/ui/Button';
 import ErrorAlert from '../../components/ui/error-alert';
+import ButtonExplore from '../../components/ui/Button';
 
 function FilteredEventsPage() {
   const router = useRouter();
@@ -36,7 +36,7 @@ function FilteredEventsPage() {
           <p>Invalid filter. Please adjust your values!</p>
         </ErrorAlert>
         <div className='center'>
-          <Button link='/events'>Show All Events</Button>
+          <ButtonExplore link='/events'>Show All Events</ButtonExplore>
         </div>
       </Fragment>
     );
@@ -54,7 +54,7 @@ function FilteredEventsPage() {
           <p>No events found for the chosen filter!</p>
         </ErrorAlert>
         <div className='center'>
-          <Button link='/events'>Show All Events</Button>
+          <ButtonExplore link='/events'>Show All Events</ButtonExplore>
         </div>
       </Fragment>
     );
