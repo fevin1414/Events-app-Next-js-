@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link"; // Corrected import statement
+import Link from "next/link";
 import classes from "./button.module.css";
 
 const ButtonExplore = (props) => {
